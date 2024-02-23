@@ -96,7 +96,8 @@ function Form() {
         >
           Upload
         </button>
-        {data && (
+      </BackgroundGradient>
+      {data && (
           <DataTable value={data.preview_rows}>
             {data.header.map((header) => (
               <Column
@@ -109,7 +110,6 @@ function Form() {
             ))}
           </DataTable>
         )}
-      </BackgroundGradient>
     </div>
   );
 }
